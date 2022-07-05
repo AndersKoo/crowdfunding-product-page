@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Circle from './Circle';
+import ToggleSwitch from './ToggleSwitch';
 
 const BookmarkedButtonsStyle = styled.div`
   position: relative;
@@ -10,8 +10,7 @@ const BookmarkedButtonsStyle = styled.div`
 function BookmarkedButtons() {
   return (
     <BookmarkedButtonsStyle>
-      <Circle />
-      Bookmarked
+      <ToggleSwitch />
     </BookmarkedButtonsStyle>
   );
 }

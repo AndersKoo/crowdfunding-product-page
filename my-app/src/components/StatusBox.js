@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Container } from '../App';
+import ProgressionLine from './ProgressionLine';
 import StatusBar from './StatusBar';
-import StatusBarDescription from './StatusBarDescription';
 
 const StatusBoxStyle = styled.div`
   display: flex;
@@ -17,13 +18,28 @@ const StatusBoxStyle = styled.div`
   }
 `;
 
+const Divider = styled.div`
+  position: relative;
+  width: 3px;
+  top: 3em;
+  height: 60px;
+  background-color: #ddd;
+`;
+
 function StatusBox() {
   return (
-    <StatusBoxStyle>
-      <StatusBar title={'$89,910'} description="of $100,000 backed" />
-      <StatusBar title={'5,007'} description="total backers" />
-      <StatusBar title={'56'} description="days left" />
-    </StatusBoxStyle>
+    <>
+      <StatusBoxStyle>
+        <StatusBar title={'$89,910'} description="of $100,000 backed" />
+        <Divider />
+        <StatusBar title={'5,007'} description="total backers" />
+        <Divider />
+        <StatusBar title={'56'} description="days left" />
+      </StatusBoxStyle>
+      <Container>
+        <ProgressionLine />
+      </Container>
+    </>
   );
 }
 

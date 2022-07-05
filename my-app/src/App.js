@@ -5,14 +5,14 @@ import Logo from './components/Logo';
 import InfoBox from './components/InfoBox';
 import StatusBox from './components/StatusBox';
 
-const Container = styled.div`
+export const Container = styled.div`
   position: relative;
   width: 100%;
   max-width: 800px;
   background-color: white;
   border-radius: 10px;
   z-index: 50;
-  padding-bottom: 4em;
+  padding-bottom: 2em;
   margin: 2em auto;
 `;
 
