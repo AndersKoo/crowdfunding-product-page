@@ -17,9 +17,10 @@ const ProgressionLineStyle = styled.div`
 
   #myBar {
     right: 40px;
-    width: 1%;
+    width: 60%;
     height: 20px;
-    color: green;
+    border-radius: 10px;
+    background-color: hsl(176, 72%, 28%);
   }
 `;
 

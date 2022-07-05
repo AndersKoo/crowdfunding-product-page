@@ -9,6 +9,11 @@ const ToggleSwitchStyle = styled.div`
     height: 50px;
     background-color: #ddd;
     border-radius: 34px;
+
+    p {
+      margin: 11px 0 0 50px;
+      position: absolute;
+    }
   }
 
   .switch input {
@@ -64,6 +69,7 @@ function ToggleSwitch() {
   return (
     <ToggleSwitchStyle>
       <label className="switch">
+        <p>Bookmarked</p>
         <input type="checkbox" />
         <span className="slider round"></span>
       </label>
