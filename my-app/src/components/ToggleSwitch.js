@@ -9,6 +9,7 @@ const ToggleSwitchStyle = styled.div`
     height: 50px;
     background-color: #ddd;
     border-radius: 34px;
+    margin: 0 0 0 5em;
 
     p {
       margin: 11px 0 0 50px;
@@ -64,6 +65,8 @@ const ToggleSwitchStyle = styled.div`
     font-size: 12px;
   }
 `;
+
+function hideText() {}
 
 function ToggleSwitch() {
   return (

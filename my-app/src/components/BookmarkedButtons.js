@@ -5,7 +5,7 @@ import ToggleSwitch from './ToggleSwitch';
 const BookmarkedButtonsStyle = styled.div`
   position: relative;
   display: flex;
-  background-color: rgba(245, 245, 245, 0.8);
+  background-color: white;
 `;
 function BookmarkedButtons() {
   return (

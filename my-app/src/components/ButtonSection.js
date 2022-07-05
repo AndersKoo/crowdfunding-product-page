@@ -4,8 +4,9 @@ import BookmarkedButtons from './BookmarkedButtons';
 
 const ButtonSectionStyle = styled.div`
   padding-top: 2em;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /*   justify-content: space-around; */
 
   .project {
     color: white;
@@ -13,6 +14,7 @@ const ButtonSectionStyle = styled.div`
     border-radius: 20px;
     border: none;
     padding: 1em;
+    margin: 0 5em;
   }
   .bookmarked {
     color: white;
@@ -20,6 +22,9 @@ const ButtonSectionStyle = styled.div`
     border-radius: 20px;
     border: none;
     padding: 1em;
+  }
+
+  @media all and (min-width: 600px) {
   }
 `;
 
